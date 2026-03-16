@@ -1,0 +1,28 @@
+[
+  {
+    "value": "Regular",
+    "synonyms": [
+      "Regular",
+      "rosted",
+      "fried"
+    ]
+  },
+  {
+    "value": "Medium",
+    "synonyms": [
+      "Medium"
+    ]
+  },
+  {
+    "value": "large",
+    "synonyms": [
+      "large"
+    ]
+  },
+  {
+    "value": "single piece",
+    "synonyms": [
+      "single piece"
+    ]
+  }
+]

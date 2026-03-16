@@ -1,0 +1,221 @@
+{
+  "id": "cbdf5556-e3d6-49fb-804a-02486df3cf97",
+  "name": "Pizzabot",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Pizzabot-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "2e11d055-fbe1-47b3-b755-ae2c7a1527ed",
+          "name": "email",
+          "required": true,
+          "dataType": "@sys.email",
+          "value": "$email",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "May i know your email id"
+            },
+            {
+              "lang": "en",
+              "value": "enter  your email id"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "fc1b2efc-fc12-4543-8cc5-e6aca16dd579",
+          "name": "phone-number",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "value": "$phone-number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "may i know your phone number"
+            },
+            {
+              "lang": "en",
+              "value": "may you enter your phone number"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c96dcc61-f50c-49c5-a09d-9590ff42ba11",
+          "name": "size",
+          "required": true,
+          "dataType": "@size",
+          "value": "$size",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what size pizza do you need regular, medium, large, single piece"
+            },
+            {
+              "lang": "en",
+              "value": "define if it is fried or rosted"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "112e2d0e-a108-4b39-b3f2-9ba04b65d195",
+          "name": "pizzatype",
+          "required": true,
+          "dataType": "@pizzatype",
+          "value": "$pizzatype",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "define the type of pizza you need"
+            },
+            {
+              "lang": "en",
+              "value": "can be paneer, sweet corn, golden brown, onion"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "fdfd68e7-f185-4447-ad78-d849df691709",
+          "name": "toppings",
+          "required": true,
+          "dataType": "@toppings",
+          "value": "$toppings",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "define your toppings"
+            },
+            {
+              "lang": "en",
+              "value": "you can have cheese , paneer, pepporonie , meat, veggies"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "6cf189ce-ea2b-444e-a7fe-fd75426e6783",
+          "name": "number-integer",
+          "required": true,
+          "dataType": "@sys.number-integer",
+          "value": "$number-integer",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "enter the number of pizza you require"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "9ffd3c76-b813-4a86-bc25-cfbf0e8f66a9",
+          "name": "date-time",
+          "required": true,
+          "dataType": "@sys.date-time",
+          "value": "$date-time",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "when do you want to book your pizza"
+            },
+            {
+              "lang": "en",
+              "value": "enter the date and time"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "8648abe6-88ce-4ecc-ba79-40d060a7061f",
+          "name": "address",
+          "required": true,
+          "dataType": "@sys.address",
+          "value": "$address",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "enter your address"
+            },
+            {
+              "lang": "en",
+              "value": "where is the pizza to be delivered"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "$date-time $number-integer $size  size $pizzatype  pizza with extra $toppings is booked to the given $email and $phone-number to $address do you want a cheese dip?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

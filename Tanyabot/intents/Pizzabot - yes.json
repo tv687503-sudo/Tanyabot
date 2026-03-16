@@ -1,0 +1,39 @@
+{
+  "id": "7f58e557-b242-4eff-873d-d506e544f724",
+  "parentId": "cbdf5556-e3d6-49fb-804a-02486df3cf97",
+  "rootParentId": "cbdf5556-e3d6-49fb-804a-02486df3cf97",
+  "name": "Pizzabot - yes",
+  "auto": true,
+  "contexts": [
+    "Pizzabot-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Pizzabot.Pizzabot-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "thank you for booking pizza with cheese dip"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
